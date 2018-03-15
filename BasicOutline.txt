@@ -1,0 +1,38 @@
+Name:
+
+Last Online:
+
+Last Mood:
+
+Age:
+
+School?:
+
+Favourite Subject:
+
+Hobbies:
+
+Interests:
+
+Likes:
+
+Dislikes:
+
+Gender:
+
+Books:
+
+Music:
+
+Favourite Songs:
+
+Fandoms:
+
+Ships:
+
+Favourite Colour:
+
+Favourite Quote?:
+
+Swear:
+False
