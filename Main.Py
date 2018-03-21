@@ -1,10 +1,36 @@
+##In all the bits where topic chooser wasn't working, it needed com = in front of it
+
 import os, sys, random, time,allGames
+#load the file with names/usernames of people who have used it
 f = open("people.txt", "r")
 prevUsers = [line.strip() for line in f]
 f.close
 
+name = ""
+mood = ""
+age = 0
+school = False
+subject = ""
+hobbies = []
+interests = []
+likes = []
+dislikes = []
+gender = ""
+books = []
+music = []
+songs = []
+fandoms = []
+ships = []
+colour = []
+quote = ""
+swear = False
+
+dice = 1
+topics = [books, fandoms, hobbies, interests, quote, age]
+
 print "When you want to leave, type 'exit', then y"
 com = "hello."
+
 
 def games():
     if "hangman" in usr:
@@ -219,27 +245,6 @@ def MyChem(com):
       com = "I don't love you. Like I did, yesterday"
   return com
 
-name = ""
-mood = ""
-age = 0
-school = False
-subject = ""
-hobbies = []
-interests = []
-likes = []
-dislikes = []
-gender = ""
-books = []
-music = []
-songs = []
-fandoms = []
-ships = []
-colour = []
-quote = ""
-swear = False
-
-dice = 1
-topics = [books, fandoms, hobbies, interests, quote, age]
 
 def sortOutTheGodsDamnedTextThatIsEntered(rawUsr):
     count = rawUsr.count(" ")
@@ -537,6 +542,7 @@ while True:                         ###START OF LOOP
 
                 way = prevList.index("Music:")
                 way = way+1
+                #music = #list(prevList[way])           ##line toreplace on all ones with lists cause it messes them up (puts everychar in seperately)
                 count = prevList[way].count(" ")
                 if count == 0:
                     for i in range (0, count+1):
@@ -589,7 +595,7 @@ while True:                         ###START OF LOOP
                 personalList = [line.strip() for line in f]
                 f.close()
                 com = "How are you?"
-                
+      #          print personalList
             else:
                 print "new"
                 f = open("basicOutline.txt" , "r")#getting the layout from basicOutline to copy it
