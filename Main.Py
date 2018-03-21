@@ -4,7 +4,7 @@ prevUsers = [line.strip() for line in f]
 f.close
 
 print "When you want to leave, type 'exit', then y"
-com = "hello."
+com = "hello." 
 
 def games():
     if "hangman" in usr:
